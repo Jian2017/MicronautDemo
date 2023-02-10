@@ -1,9 +1,0 @@
-{
-  "resources" : [ {
-    "pattern" : "\\Qlogback.xml\\E"
-  }, {
-    "pattern" : "\\Qapplication.yml\\E"
-  }, {
-    "pattern" : "\\QMETA-INF/micronaut/io.micronaut.inject.BeanDefinitionReference/example.micronaut.$FunctionRequestHandler$Definition$Reference\\E"
-  } ]
-}

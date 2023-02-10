@@ -27,8 +27,8 @@ public class FunctionRequestHandlerTest {
     public void testHandler() {
         APIGatewayProxyRequestEvent request = new APIGatewayProxyRequestEvent();
         request.setHttpMethod("GET");
-	request.setBody("a");
-	request.setPath("/");
+        request.setBody("{\"string\":\"test\"}");
+        request.setPath("/");
         APIGatewayProxyResponseEvent response = handler.execute(request);
         assertEquals(200, response.getStatusCode().intValue());
     }
@@ -37,6 +37,7 @@ public class FunctionRequestHandlerTest {
     public void testHandler400() {
         APIGatewayProxyRequestEvent request = new APIGatewayProxyRequestEvent();
         request.setHttpMethod("GET");
+        request.setBody("{}");
         request.setPath("/");
         APIGatewayProxyResponseEvent response = handler.execute(request);
         assertEquals(400, response.getStatusCode().intValue());
