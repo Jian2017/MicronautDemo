@@ -1,5 +1,0 @@
-example/micronaut/$FunctionRequestHandler$Definition.class
-example/micronaut/$FunctionRequestHandler$Definition$Reference.class
-example/micronaut/FunctionRequestHandler.class
-example/micronaut/FunctionLambdaRuntime.class
-META-INF/micronaut/io.micronaut.inject.BeanDefinitionReference/example.micronaut.$FunctionRequestHandler$Definition$Reference
